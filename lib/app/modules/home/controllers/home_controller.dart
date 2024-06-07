@@ -78,8 +78,7 @@ abstract class HomeControllerBase with Store {
         'phone_user': phone.text,
       });
       cleanInputs();
-      idSelectedCar = null;
-      nameSelectedCar = "";
+
       BotToast.showText(
         contentColor: Colors.green,
         borderRadius: BorderRadius.circular(8),
@@ -127,6 +126,8 @@ abstract class HomeControllerBase with Store {
     email.clear();
     phone.clear();
     name.clear();
+    idSelectedCar = null;
+    nameSelectedCar = "";
     Modular.to.pop();
   }
 }

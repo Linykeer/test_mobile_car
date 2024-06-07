@@ -20,6 +20,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Stack(
         alignment: Alignment.center,
         children: [
@@ -46,6 +47,17 @@ class _SplashPageState extends State<SplashPage> {
             children: [
               Text(
                 'Processo Seletivo Flutter',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'WS Work',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,
